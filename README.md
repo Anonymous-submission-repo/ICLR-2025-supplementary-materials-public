@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-This repository is the implementation of EcoAct: Economic Agent Determines When to Register What action.
+This repository is the implementation of EcoAct: Economic Agent Determines When to Register What Action.
 This version of the code is made to facilitate the peer review of the ICLR 2025 submission of our paper. We plan to release the code accompanying the formal publication of this paper.
 
 ## Datasets
