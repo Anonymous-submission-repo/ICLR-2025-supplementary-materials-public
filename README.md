@@ -7,7 +7,7 @@ This version of the code is made to facilitate the peer review of the ICLR 2025 
 
 ## Datasets
 
-We mainly conduct experiments on the ToolBench[1], which is large-scale dataset for tool use. It involves 16,464 tools in total which has been widely used as the benchmark to make evaluations of tool use algorithm[2]. Please download the dataset through their official github repo (https://github.com/OpenBMB/ToolBench). 
+We mainly conduct experiments on the ToolBench[1], which is large-scale dataset for tool use. It involves 16,464 tools in total which has been widely used as the benchmark to make evaluations of tool use algorithm[2]. Please download and deploy the dataset through their official github repo (https://github.com/OpenBMB/ToolBench). 
 
 ## Requirements
 
@@ -16,8 +16,8 @@ We mainly conduct experiments on the ToolBench[1], which is large-scale dataset 
 ```
 pip install -r requirements.txt
 ```
+**2. Specify OpenAI key and ToolBench in config.py.**
 
-**2. Specify OpenAI key in config.py.**
 
 ## How to Run
 
@@ -42,6 +42,8 @@ python convert_to_answer_format.py --answer_dir /your_path_to_inference_result/G
 ```
 
 **4. Making evaluation for pass rate**
+
+Specify OpenAI key for evaluation in toolbench/tooleval/config.py.
 
 ```
 python eval_pass_rate_anytool.py --converted_answer_path path_to_your_converted_inference_result/G1_instruction
